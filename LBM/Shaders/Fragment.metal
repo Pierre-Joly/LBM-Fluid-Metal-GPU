@@ -20,7 +20,7 @@ fragment float4 fragment_main(VertexOut in [[stage_in]],
 
     bool is_SOLID = solidMask[idx];
 
-    float speed = speedNorm[idx] / max(params.speedMax, 1e-6f);
+    float speed = sqrt(speedNorm[idx]) / max(params.speedMax, 1e-6f);
     float t = clamp(speed, 0.0, 1.0);
     float3 color = gradientTexture.sample(textureSampler, float2(t, 0.5)).rgb;
 

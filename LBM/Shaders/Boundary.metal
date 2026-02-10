@@ -124,7 +124,7 @@ kernel void boundary(device float* distributionIn [[buffer(DistributionInBuffer)
     
     // Get the norm
     float u2 = dot(u, u);
-    speedNorm[id] = sqrt(u2);
+    speedNorm[id] = u2;
 
     // Collide
     for (uint k = 0; k < Nl; ++k) {

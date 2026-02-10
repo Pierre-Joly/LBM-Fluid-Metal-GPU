@@ -63,7 +63,7 @@ kernel void collide_stream(device float* const distributionIn [[buffer(Distribut
     
     // Get the norm
     float u2 = dot(u, u);
-    speedNorm[id] = sqrt(u2);
+    speedNorm[id] = u2;
 
     // Collide
     float invTau = 1.0f / params.tau;

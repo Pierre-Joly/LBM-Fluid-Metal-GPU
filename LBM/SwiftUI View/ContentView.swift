@@ -6,14 +6,14 @@ import AppKit
 struct ContentView: View {
     @State private var isRunning: Bool = true
     @State private var restartToken: Int = 0
-    @State private var substeps: Int = 1
-    @State private var tau: Float = 0.6
+    @State private var substeps: Int = 51
+    @State private var tau: Float = 0.54
     @State private var ma: Float = 0.09
-    @State private var aoaDeg: Float = 5.0
+    @State private var aoaDeg: Float = 10.2
     @State private var chordRatio: Float = 0.3
     @State private var speedMax: Float = 0.15
-    @State private var gridResolutionX: Int = 256
-    @State private var gridResolutionY: Int = 256
+    @State private var gridResolutionX: Int = 2016
+    @State private var gridResolutionY: Int = 736
     @AppStorage("uiTheme") private var themeModeRaw: String = ThemeMode.system.rawValue
 
     private var themeMode: ThemeMode {
