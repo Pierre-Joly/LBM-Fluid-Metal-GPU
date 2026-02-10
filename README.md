@@ -4,7 +4,7 @@ Interactive 2D **Lattice Boltzmann Method (LBM)** flow simulation on macOS, acce
 
 ## Showcase
 
-![LBM simulation showcase](docs/images/lbm_1.jpeg)
+![LBM simulation showcase](LBM/docs/images/lbm_1.jpeg)
 
 ## What it does
 
